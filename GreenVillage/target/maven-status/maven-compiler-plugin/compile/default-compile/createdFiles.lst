@@ -1,0 +1,13 @@
+com\mycompany\greenvillage\AccueilController.class
+DAL\Rubrique.class
+DAL\RubriqueDAO.class
+DAL\Produit.class
+com\mycompany\greenvillage\ProduitController.class
+DAL\ClientDAO.class
+DAL\FournisseurDAO.class
+DAL\Fournisseur.class
+DAL\ProduitDAO.class
+DAL\ConnectSGBD.class
+com\mycompany\greenvillage\App.class
+DAL\Client.class
+com\mycompany\greenvillage\ClientController.class

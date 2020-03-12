@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>                              
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0"   xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.checkbox.FXMLController">
+   <children>
+      <GridPane layoutX="26.0" layoutY="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="20.0" prefWidth="20.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="20.0" prefWidth="20.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="266.0" minHeight="10.0" prefHeight="160.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="131.0" minHeight="0.0" prefHeight="49.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="156.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TitledPane fx:id="paneTexte" animated="false" collapsible="false" disable="true" prefHeight="170.0" prefWidth="204.0" text="Texte" GridPane.columnIndex="2" GridPane.rowIndex="2">
+              <content>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="150.0">
+                     <children>
+                        <RadioButton fx:id="texteRouge" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#addStyle" text="Rouge">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="texte" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="texteBlanc" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onAction="#addStyle" text="Blanc" toggleGroup="$texte">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="texteNoir" layoutX="14.0" layoutY="88.0" mnemonicParsing="false" onAction="#addStyle" text="Noir" toggleGroup="$texte">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane fx:id="paneFond" animated="false" collapsible="false" disable="true" prefHeight="170.0" prefWidth="204.0" text="Fond" GridPane.rowIndex="2">
+               <content>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="150.0">
+                     <children>
+                        <RadioButton fx:id="fondRouge" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#addStyle" text="Rouge">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="fond" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="fondVert" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onAction="#addStyle" text="Vert" toggleGroup="$fond">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="fondBleu" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#addStyle" text="Bleu" toggleGroup="$fond">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="paneCasse" animated="false" collapsible="false" disable="true" prefHeight="170.0" prefWidth="204.0" text="Casse" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <content>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="150.0">
+                     <children>
+                        <RadioButton fx:id="minuscule" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#addStyle" text="Minuscule">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="casse" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="majuscule" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" onAction="#addStyle" text="Majuscule" toggleGroup="$casse">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="paneCheckBox" animated="false" collapsible="false" disable="true" text="Choix" GridPane.columnIndex="3" GridPane.columnSpan="2">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="couleurFond" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#addStyle" text="Couleur de fond">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="couleurTexte" layoutX="13.0" layoutY="51.0" mnemonicParsing="false" onAction="#addStyle" text="Couleur de texte">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="Casse" layoutX="14.0" layoutY="89.0" mnemonicParsing="false" onAction="#addStyle" text="Casse">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <Label fx:id="lbl" prefHeight="37.0" prefWidth="540.0" GridPane.columnSpan="3">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" top="80.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt" onAction="#AfficheTexte" GridPane.columnSpan="3">
+               <GridPane.margin>
+                  <Insets bottom="80.0" left="20.0" right="20.0" top="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

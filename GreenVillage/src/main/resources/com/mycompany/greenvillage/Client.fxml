@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane_Clients" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.greenvillage.ClientController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="22.0" prefHeight="77.0" prefWidth="554.0" text="Gestion Clients et Historique de commande" textAlignment="CENTER" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane_form" layoutX="40.0" layoutY="100.0" prefHeight="260.0" prefWidth="625.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <children>
+            <Label fx:id="lbl_cli_id" layoutY="15.0" prefHeight="25.0" prefWidth="149.0" text="id">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_ville" layoutX="346.0" layoutY="80.0" prefHeight="25.0" prefWidth="149.0" text="ville">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_statut" layoutX="173.0" layoutY="210.0" prefHeight="25.0" prefWidth="149.0" text="status">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_mail" layoutX="173.0" layoutY="145.0" prefHeight="25.0" prefWidth="149.0" text="mail">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_code_postal" layoutX="173.0" layoutY="80.0" prefHeight="25.0" prefWidth="149.0" text="code postal">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_nom" layoutX="173.0" layoutY="15.0" prefHeight="25.0" prefWidth="149.0" text="nom">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_telephone" layoutY="210.0" prefHeight="25.0" prefWidth="149.0" text="telephone">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_pays" layoutY="145.0" prefHeight="25.0" prefWidth="149.0" text="pays">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_rue" layoutY="80.0" prefHeight="25.0" prefWidth="149.0" text="rue">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_coefficient" layoutX="346.0" layoutY="210.0" prefHeight="25.0" prefWidth="149.0" text="coefficient">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_password" layoutX="346.0" layoutY="145.0" prefHeight="25.0" prefWidth="149.0" text="password">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_cli_prenom" layoutX="346.0" layoutY="15.0" prefHeight="25.0" prefWidth="149.0" text="prenom">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_validate" layoutX="520.0" layoutY="116.0" mnemonicParsing="false" onAction="#btn_validate" text="Valider" />
+            <Button fx:id="btn_cancel" layoutX="520.0" layoutY="154.0" mnemonicParsing="false" onAction="#btn_cancel" text="Annuler" />
+            <Button fx:id="btn_backTable" layoutX="520.0" layoutY="193.0" mnemonicParsing="false" onAction="#btn_backTable" text="Retour Tableau" />
+            <Label fx:id="lbl_action" layoutX="520.0" layoutY="1.0" prefHeight="104.0" prefWidth="108.0" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane fx:id="pane_TextField" prefHeight="260.0" prefWidth="510.0">
+               <children>
+                  <TextField fx:id="txt_cli_id" layoutY="40.0" />
+                  <TextField fx:id="txt_cli_nom" layoutX="173.0" layoutY="40.0" />
+                  <TextField fx:id="txt_cli_prenom" layoutX="346.0" layoutY="40.0" />
+                  <TextField fx:id="txt_cli_rue" layoutY="105.0" />
+                  <TextField fx:id="txt_cli_code_postal" layoutX="173.0" layoutY="105.0" />
+                  <TextField fx:id="txt_cli_ville" layoutX="346.0" layoutY="105.0" />
+                  <TextField fx:id="txt_cli_pays" layoutY="170.0" />
+                  <TextField fx:id="txt_cli_mail" layoutX="173.0" layoutY="170.0" />
+                  <TextField fx:id="txt_cli_password" layoutX="346.0" layoutY="170.0" />
+                  <TextField fx:id="txt_cli_telephone" layoutY="235.0" />
+                  <TextField fx:id="txt_cli_status" layoutX="173.0" layoutY="235.0" />
+                  <TextField fx:id="txt_cli_coefficient" layoutX="346.0" layoutY="235.0" />
+               </children>
+            </Pane>
+            <Button focusTraversable="false" layoutX="520.0" layoutY="235.0" mnemonicParsing="false" onAction="#btn_backHome" text="Retour Accueil" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_tab" layoutX="226.0" layoutY="-1.0" prefHeight="260.0" prefWidth="625.0" visible="false" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0">
+         <children>
+            <TableView fx:id="tab_clients" prefHeight="260.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="tabc_nom" prefWidth="150.0" text="Nom" />
+                <TableColumn fx:id="tabc_prenom" prefWidth="125.0" text="Prénom" />
+                  <TableColumn fx:id="tabc_ville" prefWidth="109.0" text="Ville" />
+                  <TableColumn fx:id="tabc_telephone" prefWidth="115.0" text="Téléphone" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_add" layoutX="520.0" mnemonicParsing="false" onAction="#btn_add" text="Ajouter " />
+            <Button fx:id="btn_update" layoutX="520.0" layoutY="38.0" mnemonicParsing="false" onAction="#btn_update" text="Modifier" />
+            <Button fx:id="btn_delete" layoutX="520.0" layoutY="79.0" mnemonicParsing="false" onAction="#btn_delete" text="Supprimer" />
+            <Label fx:id="lbl_error" layoutX="520.0" layoutY="115.0" prefHeight="104.0" prefWidth="104.0" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button focusTraversable="false" layoutX="520.0" layoutY="235.0" mnemonicParsing="false" onAction="#btn_backHome" text="Retour Accueil" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

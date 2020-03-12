@@ -1,0 +1,5 @@
+com\mycompany\papyrusjdbc\DetailFournisseurController.class
+com\mycompany\papyrusjdbc\DetailsCommandeController.class
+module-info.class
+com\mycompany\papyrusjdbc\AjoutFournisseurController.class
+com\mycompany\papyrusjdbc\App.class

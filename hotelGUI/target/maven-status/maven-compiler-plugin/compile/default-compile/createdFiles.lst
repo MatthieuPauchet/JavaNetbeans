@@ -1,0 +1,5 @@
+com\mycompany\hotelgui\App.class
+com\mycompany\hotelDAO\ClientDAO.class
+com\mycompany\hotelDAO\Client.class
+com\mycompany\hotelgui\HotelGUIController.class
+Regex\TestRegex.class
