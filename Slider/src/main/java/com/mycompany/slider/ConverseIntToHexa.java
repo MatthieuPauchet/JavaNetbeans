@@ -7,7 +7,8 @@ package com.mycompany.slider;
 
 /**
  *
- * @author 80010-58-17
+ * @author M.Pauchet 01/02/2020
+ * Méthode permettant de convertir un int inférieur à 256 en Hexa pour les codes couleurs notamment
  */
 public class ConverseIntToHexa {
     public static String converseInt256ToHexa(int number) {
